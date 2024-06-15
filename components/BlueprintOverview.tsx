@@ -1,6 +1,6 @@
+"use client";
 import React, { useState } from "react";
 import { Tab, TabPanel, Tabs, TabsList } from "@mui/base";
-import { styled } from "@mui/system";
 import BlueprintCard from "../components/BlueprintCard";
 import { Fab } from "@mui/material";
 
