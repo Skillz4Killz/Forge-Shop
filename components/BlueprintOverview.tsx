@@ -107,7 +107,9 @@ const BlueprintOverview = (props: any) => {
                   fontSize: "12px",
                   marginRight: "16px",
                 }}
-              />
+              >
+                {name}
+              </Tab>
             ))}
           </TabsList>
           <TabPanel value={0}>{makeTab(weapons)}</TabPanel>
