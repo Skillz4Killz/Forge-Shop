@@ -1,0 +1,60 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: 0.8s cubic-bezier(0.02, 0.8, 0.2, 1);
+  display: none;
+}
+
+.HeaderScrolled {
+  background: #141b1ecc;
+  backdrop-filter: blur(8px);
+  height: 50px;
+  color: white;
+}
+
+.HeaderGroup {
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 0px 30px;
+  justify-content: center;
+}
+
+.herobut {
+  margin-left: 50px;
+}
+
+.Header a {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  background: rgba(0, 0, 0, 0);
+  margin-left: 16px;
+}
+
+.Header img {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.nav-hide-mobile {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .nav-hide-mobile {
+    display: inline;
+  }
+  .nav-show-mobile {
+    display: none;
+  }
+  .Header {
+    display: inherit;
+  }
+}
