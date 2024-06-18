@@ -100,7 +100,11 @@ const BlueprintOverview = (props: any) => {
             {["Weapons", "Heavy", "Light", "Items"].map((name, index) => (
               <Tab
                 key={index}
-                className={`button ${value === index ? "bg-blue-500" : ""}`}
+                className={`rounded-full px-6 py-2 ${
+                  value === index
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-gray-600"
+                }`}
                 style={{
                   border: "1px solid grey",
                   borderRadius: "50px",
