@@ -102,23 +102,22 @@ const Layout = ({ children }) => (
             Forge Shop copyrights and art assets belong to Kabam Games Inc.
           </p>
           Made by{" "}
-          <a
-            style={{ color: "#daa54e" }}
-            href="https://twitter.com/AC1design"
-          >
+          <a style={{ color: "#daa54e" }} href="https://twitter.com/AC1design">
             AngeloC
           </a>{" "}
           &{" "}
-          <a
-            style={{ color: "#daa54e" }}
-            href="https://discord.gg/rWMuMdk"
-          >
+          <a style={{ color: "#daa54e" }} href="https://discord.gg/rWMuMdk">
             Skillz4Killz
           </a>
           <p>Privacy Policy: We don’t store your data.</p>
         </StickyFooter>
 
         <BottomNav className="bottomNav" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7757203552951139"
+          crossorigin="anonymous"
+        ></script>
       </>
     )}
   />
