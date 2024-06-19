@@ -81,7 +81,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   {
-    imageOne: file(relativePath: { eq: "Backgrounds/Banner.jpg" }) {
+    imageOne: file(relativePath: { eq: "Backgrounds/Banner.png" }) {
       childImageSharp {
         fluid(maxWidth: 1366) {
           ...GatsbyImageSharpFluid
