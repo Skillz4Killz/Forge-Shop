@@ -106,7 +106,7 @@ const Layout = ({ children }) => (
             AngeloC
           </a>{" "}
           &{" "}
-          <a style={{ color: "#daa54e" }} href="https://discord.gg/rWMuMdk">
+          <a style={{ color: "#daa54e" }} href="https://discord.gg/zvPUxbnaQq">
             Skillz4Killz
           </a>
           <p>Privacy Policy: We don’t store your data.</p>

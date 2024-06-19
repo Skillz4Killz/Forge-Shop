@@ -38,7 +38,7 @@ const BlogPost = ({ data }) => {
           <WorkerImage filename="Logo" alt="Logo" />
           <div style={{ marginTop: "5px" }}>
             <a
-              href="https://discord.gg/forgeshop"
+              href="https://discord.gg/zvPUxbnaQq"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -56,7 +56,7 @@ const BlogPost = ({ data }) => {
               </Fab>
             </a>
             <a
-              href="https://discord.gg/rWMuMdk"
+              href="https://discord.gg/zvPUxbnaQq"
               target="_blank"
               rel="noopener noreferrer"
             >

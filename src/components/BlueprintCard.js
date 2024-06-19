@@ -133,33 +133,36 @@ const PackageIcon = styled.div`
 export default props => {
   let workerLevel = 1
   let secondWorkerLevel = 1
+  const firstWorkerData = workers.find(
+    worker =>
+      worker.title.toLowerCase() ===
+      props.details["Required Worker"].toLowerCase()
+  )
+  const secondWorkerData = workers.find(
+    worker =>
+      worker.title.toLowerCase() ===
+      props.details["Required Worker__1"].toLowerCase()
+  )
 
+  if (!firstWorkerData) return null;
+
+  console.log(
+    props.details.Name,
+    ":",
+    props.details["Required Worker"].toLowerCase(),
+    firstWorkerData?.name,
+    '>',
+    props.details["Required Worker__1"].toLowerCase(),
+    secondWorkerData?.name
+  )
+
+  // console.log("in bc", props)
   try {
     workerLevel =
-      parseInt(
-        localStorage.getItem(
-          workers
-            .find(
-              worker =>
-                worker.title.toLowerCase() ===
-                props.details["Required Worker"].toLowerCase()
-            )
-            .name.toLowerCase()
-        )
-      ) || 1
+      parseInt(localStorage.getItem(firstWorkerData?.name.toLowerCase())) || 1
 
     secondWorkerLevel =
-      parseInt(
-        localStorage.getItem(
-          workers
-            .find(
-              worker =>
-                worker.title.toLowerCase() ===
-                props.details["Required Worker"].toLowerCase()
-            )
-            .name.toLowerCase()
-        )
-      ) || 1
+      parseInt(localStorage.getItem(secondWorkerData?.name.toLowerCase())) || 1
   } catch {
     // ignore this try catch is to ignore localstorage missing in gatsby build server side rendering
   }
@@ -219,13 +222,7 @@ export default props => {
           <EnergyCost>{props.details["Research Scrolls"]}</EnergyCost>
         ) : null}
         <HeroItem
-          filename={workers
-            .find(
-              worker =>
-                worker.title.toLowerCase() ===
-                props.details["Required Worker"].toLowerCase()
-            )
-            .name.toLowerCase()}
+          filename={firstWorkerData.name.toLowerCase()}
           alt={props.details["Required Worker"]}
           style={{
             position: "relative",
@@ -236,15 +233,9 @@ export default props => {
 
         <EnergyCost>Level {props.details["Worker Level"]}</EnergyCost>
 
-        {props.details["Required Worker__1"] !== "---" ? (
+        {secondWorkerData ? (
           <HeroItem
-            filename={workers
-              .find(
-                worker =>
-                  worker.title.toLowerCase() ===
-                  props.details["Required Worker__1"].toLowerCase()
-              )
-              .name.toLowerCase()}
+            filename={secondWorkerData.name.toLowerCase()}
             alt={props.details["Required Worker__1"].toLowerCase()}
             style={{
               position: "relative",

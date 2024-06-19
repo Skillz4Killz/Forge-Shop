@@ -48,7 +48,7 @@ export default props => (
       {/* Commenting until we are ready to monetize
       <Description>Click Below To Support The Project!</Description>
       <a
-        href="https://discord.gg/forgeshop"
+        href="https://discord.gg/zvPUxbnaQq"
         style={{ margin: "15px" }}
         target="_blank"
         rel="noopener noreferrer"
