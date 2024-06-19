@@ -146,17 +146,6 @@ export default props => {
 
   if (!firstWorkerData) return null;
 
-  console.log(
-    props.details.Name,
-    ":",
-    props.details["Required Worker"].toLowerCase(),
-    firstWorkerData?.name,
-    '>',
-    props.details["Required Worker__1"].toLowerCase(),
-    secondWorkerData?.name
-  )
-
-  // console.log("in bc", props)
   try {
     workerLevel =
       parseInt(localStorage.getItem(firstWorkerData?.name.toLowerCase())) || 1
