@@ -8,6 +8,7 @@ import Fab from "@material-ui/core/Fab"
 
 const weapons = [
   "Axe",
+  "Blade",
   "Bow",
   "Crossbow",
   "Dagger",
