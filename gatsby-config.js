@@ -64,12 +64,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify-cache`,
-      options: {
-        cachePublic: true
-      }
-    },
     `gatsby-plugin-styled-components`,
     'gatsby-transformer-javascript-frontmatter',
     `gatsby-plugin-netlify-cms`,
