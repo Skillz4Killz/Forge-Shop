@@ -39,7 +39,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#F7B241`,
         theme_color: `#141b1e`,
-        display: `Fullscreen`,
+        display: `fullscreen`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },

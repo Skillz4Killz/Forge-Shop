@@ -6,7 +6,7 @@ const Image = props => (
   <StaticQuery
     query={graphql`
       query {
-        images: file(relativePath: { eq: "Logo.png" }) {
+        images: file(relativePath: { eq: "Logo.jpg" }) {
           relativePath
           name
           childImageSharp {
