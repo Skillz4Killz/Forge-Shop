@@ -72,13 +72,13 @@ export default props => (
 )
 
 export const pageQuery = graphql`
-  {
-    imageOne: file(relativePath: { eq: "Backgrounds/BG1.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2560) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+         {
+           imageOne: file(relativePath: { eq: "Backgrounds/Banner.png" }) {
+             childImageSharp {
+               fluid(maxWidth: 2560) {
+                 ...GatsbyImageSharpFluid
+               }
+             }
+           }
+         }
+       `

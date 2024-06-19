@@ -73,8 +73,7 @@ const IndexPage = props => (
       description="Forge Shop Design & Craft API that provides detailed statistics for blueprints, workers, champions and much more. This API was created for the purpose of helping community developers be able to create amazing projects much faster and easier."
     />
     <div className="Hero">
-      <div className="HeroContainer">
-      </div>
+      <div className="HeroContainer"></div>
       <div className="HeroGroup">
         <Logo filename="Logo" alt="Logo" />
         <div style={{ marginTop: "5px" }}>
@@ -151,8 +150,8 @@ const IndexPage = props => (
     <Subtitle>Interactive Experience</Subtitle>
     <Description>
       We built a page on our website at{" "}
-      <Link to="api.forgeshop.xyz">https://api.forgeshop.xyz</Link> so that
-      you could interact with the API to see how it works. You can build entire
+      <Link to="api.forgeshop.xyz">https://api.forgeshop.xyz</Link> so that you
+      could interact with the API to see how it works. You can build entire
       queries on this page so that you can simply copy and paste your desired
       queries into your own applications. Cool right?
     </Description>
@@ -166,8 +165,8 @@ const IndexPage = props => (
     <Subtitle>Getting Started</Subtitle>
     <Description>
       In order to fetch data from the API, you will send a POST request to
-      https://api.forgeshop.xyz. Below is an example of how to retrieve the
-      data from the API with Javascript.
+      https://api.forgeshop.xyz. Below is an example of how to retrieve the data
+      from the API with Javascript.
     </Description>
     <pre>
       <Code>{queryExample}</Code>
@@ -188,7 +187,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   {
-    imageOne: file(relativePath: { eq: "Backgrounds/BG1.jpg" }) {
+    imageOne: file(relativePath: { eq: "Backgrounds/Banner.png" }) {
       childImageSharp {
         fluid(maxWidth: 1366) {
           ...GatsbyImageSharpFluid

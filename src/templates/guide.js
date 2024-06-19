@@ -114,7 +114,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    imageOne: file(relativePath: { eq: "Backgrounds/BG1.jpg" }) {
+    imageOne: file(relativePath: { eq: "Backgrounds/Banner.png" }) {
       childImageSharp {
         fluid(maxWidth: 1366) {
           ...GatsbyImageSharpFluid

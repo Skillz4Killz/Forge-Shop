@@ -38,43 +38,25 @@ const Hero = styled.div`
 const workerData = [
   {
     title: "Workers",
-    array: [
-      "wallace",
-      "allan",
-      "maribel",
-      "katarina",
-      "Theodore",
-      "freyja",
-      "julia",
-      "grimar",
-    ],
+    array: ["zoltan"],
     type: "worker",
     color: "#ff665f",
   },
   {
     title: "Premium Workers",
-    array: ["evelyn", "roxanne"],
+    array: [],
     type: "worker",
     color: "#ff665f",
   },
   {
     title: "Special",
-    array: ["elder owen", "naya", "oscar", "argon"],
+    array: [],
     type: "special",
     color: "orange",
   },
   {
     title: "Producers",
-    array: [
-      "juniper",
-      "durhan",
-      "jog",
-      "gorza",
-      "beatrice",
-      "brohm",
-      "tamas",
-      "ismael",
-    ],
+    array: [],
     type: "resource",
     color: "lightblue",
   },
@@ -124,7 +106,7 @@ export default () => (
 
 export const pageQuery = graphql`
   {
-    imageOne: file(relativePath: { eq: "Backgrounds/BG1.jpg" }) {
+    imageOne: file(relativePath: { eq: "Backgrounds/Banner.png" }) {
       childImageSharp {
         fluid(maxWidth: 2560) {
           ...GatsbyImageSharpFluid
